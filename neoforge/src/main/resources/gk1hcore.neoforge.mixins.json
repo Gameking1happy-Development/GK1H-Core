@@ -1,8 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "io.github.gameking1happy.examplemod.mixin",
-  "refmap": "${mod_id}.refmap.json",
+  "package": "io.github.gameking1happy.gk1hcore.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "client": [
@@ -13,4 +12,3 @@
     "defaultRequire": 1
   }
 }
-  

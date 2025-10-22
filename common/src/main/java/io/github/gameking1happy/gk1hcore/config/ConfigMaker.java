@@ -1,4 +1,4 @@
-package io.github.gameking1happy.examplemod.config;
+package io.github.gameking1happy.gk1hcore.config;
 
 import static net.neoforged.neoforge.common.ModConfigSpec.*;
 public class ConfigMaker {

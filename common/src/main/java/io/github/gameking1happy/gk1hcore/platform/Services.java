@@ -1,9 +1,9 @@
-package io.github.gameking1happy.examplemod.platform;
+package io.github.gameking1happy.gk1hcore.platform;
 
-import io.github.gameking1happy.examplemod.platform.services.IPlatformHelper;
+import io.github.gameking1happy.gk1hcore.platform.services.IPlatformHelper;
 import java.util.ServiceLoader;
 
-import static io.github.gameking1happy.examplemod.ExampleMod.LOG;
+import static io.github.gameking1happy.gk1hcore.GK1HCore.LOG;
 public class Services {
     public static final IPlatformHelper PLATFORM = load(IPlatformHelper.class);
     public static <T> T load(Class<T> clazz) {

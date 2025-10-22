@@ -1,6 +1,6 @@
-package io.github.gameking1happy.examplemod.mixin;
+package io.github.gameking1happy.gk1hcore.mixin;
 
-import io.github.gameking1happy.examplemod.ExampleMod;
+import io.github.gameking1happy.gk1hcore.GK1HCore;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
@@ -14,6 +14,6 @@ public class MixinTitleScreen {
     @Inject(at = @At("HEAD"), method = "init()V")
     private void init(CallbackInfo info) {
 
-        ExampleMod.LOG.info("MC Version: {}", Minecraft.getInstance().getVersionType());
+        GK1HCore.LOG.info("MC Version: {}", Minecraft.getInstance().getVersionType());
     }
 }

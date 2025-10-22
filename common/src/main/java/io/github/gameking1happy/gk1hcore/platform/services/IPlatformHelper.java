@@ -1,4 +1,4 @@
-package io.github.gameking1happy.examplemod.platform.services;
+package io.github.gameking1happy.gk1hcore.platform.services;
 
 public interface IPlatformHelper {
     String getPlatformName();
