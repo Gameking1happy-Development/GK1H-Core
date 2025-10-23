@@ -5,7 +5,9 @@ import java.util.ServiceLoader;
 
 import static io.github.gameking1happy.gk1hcore.GK1HCore.LOG;
 public class Services {
+    // Platform helper which provides information which platform the mod is running on.
     public static final IPlatformHelper PLATFORM = load(IPlatformHelper.class);
+    // This code is used to load a service for the current environment.
     public static <T> T load(Class<T> clazz) {
         final T loadedService = ServiceLoader.load(clazz)
                 .findFirst()

@@ -2,6 +2,7 @@ package io.github.gameking1happy.gk1hcore.config;
 
 import static net.neoforged.neoforge.common.ModConfigSpec.*;
 public class ConfigMaker {
+    // A method to reduce boilerplate when making config values.
     public static <T> ConfigValue<T> makeConfig(Builder BUILDER, String translationKey, String comment, String name, T defaultValue) {
         return BUILDER
                 .translation(translationKey)
