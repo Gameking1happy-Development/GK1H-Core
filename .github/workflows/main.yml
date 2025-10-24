@@ -1,6 +1,6 @@
 on:
   release:
-    published:
+    types: [published]
 jobs:
   build:
     runs-on: ubuntu-latest
