@@ -14,10 +14,8 @@ jobs:
           modrinth-id: vjOWyxXu
           modrinth-token: ${{secrets.GK1H_MODRINTH_API_KEY}}
           files: |
-            fabric/build/libs/!(*-@(dev|sources|javadoc)).jar
-            fabric/build/libs/*-@(dev|sources|javadoc).jar
-            neoforge/build/libs/!(*-@(dev|sources|javadoc)).jar
-            neoforge/build/libs/*-@(dev|sources|javadoc).jar
+            fabric/build/libs/*.jar
+            neoforge/build/libs/*.jar
           # Only include this section if you wish to publish
           # your assets on CurseForge.
           curseforge-id: 1369996
