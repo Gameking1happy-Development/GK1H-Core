@@ -3,9 +3,11 @@
   "1.21.1": {
     "1.0.0": "Release.",
     "1.0.1": "Fixed error requiring FCAP on NeoForge and added comments.",
-    "1.0.2": "Implemented usage of mc-publish."
+    "1.0.2": "Implemented usage of mc-publish.",
+    "1.0.2_1": "Edited mixins to reduce spam."
   },
   "promos": {
+    "1.21.1-latest": "1.0.2_1",
     "1.21.1-recommended": "1.0.2"
   }
 }
