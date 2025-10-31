@@ -3,7 +3,7 @@ package io.github.gameking1happy.gk1hcore.platform;
 import io.github.gameking1happy.gk1hcore.platform.services.IPlatformHelper;
 import java.util.ServiceLoader;
 
-import static io.github.gameking1happy.gk1hcore.GK1HCore.LOG;
+import static io.github.gameking1happy.gk1hcore.Main.LOG;
 public class Services {
     // Platform helper which provides information which platform the mod is running on.
     public static final IPlatformHelper PLATFORM = load(IPlatformHelper.class);

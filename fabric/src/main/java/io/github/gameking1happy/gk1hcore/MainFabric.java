@@ -4,7 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import static io.github.gameking1happy.gk1hcore.platform.Services.PLATFORM;
 
-public class GK1HCoreFabric implements ModInitializer {
+public class MainFabric implements ModInitializer {
 
     public void onInitialize() {
         // Ensures that the Forge Config API Port is loaded, probably unnecessary but just in case.
@@ -12,6 +12,6 @@ public class GK1HCoreFabric implements ModInitializer {
             throw new IllegalArgumentException("FCAP IS NOT LOADED!!!");
         }
         // Initialize the mod.
-        GK1HCore.init();
+        Main.init();
     }
 }

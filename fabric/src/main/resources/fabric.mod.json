@@ -17,7 +17,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "${group}.GK1HCoreFabric"
+      "${group}.MainFabric"
     ]
   },
   "mixins": [

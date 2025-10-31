@@ -22,7 +22,3 @@ build
 eclipse
 run
 runs
-!neoforge/build
-neoforge/build/**
-!neoforge/build/libs/
-!neoforge/build/libs/**

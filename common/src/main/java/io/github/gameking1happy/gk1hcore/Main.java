@@ -1,10 +1,9 @@
 package io.github.gameking1happy.gk1hcore;
 
-import io.github.gameking1happy.gk1hcore.config.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import static io.github.gameking1happy.gk1hcore.platform.Services.PLATFORM;
-public class GK1HCore {
+public class Main {
     public static void init() {
         // Gives a startup message to the log.
         LOG.info("GK1H Core running on {} in a {} environment.", PLATFORM.getPlatformName(), PLATFORM.getEnvironmentName());

@@ -4,6 +4,7 @@ import io.github.gameking1happy.gk1hcore.platform.services.IPlatformHelper;
 import net.neoforged.fml.ModList;
 
 import static net.neoforged.fml.loading.FMLLoader.isProduction;
+
 public class NeoForgePlatformHelper implements IPlatformHelper {
 
     @Override
