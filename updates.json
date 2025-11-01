@@ -6,10 +6,11 @@
     "1.0.2": "Implemented usage of mc-publish.",
     "1.0.2_1": "Edited mixins to reduce spam.",
     "1.0.3": "Renamed classes, reformated everything, and updated Gradle, Loom, and ModDevGradle.",
-    "21.1.1.0": "Changed versioning to [Minecraft Minor].[Minecraft Patch].[Major].[Minor]."
+    "21.1.1.0": "Changed versioning to [Minecraft Minor].[Minecraft Patch].[Major].[Minor].",
+    "21.1.1.1-alpha1": "Experimental changes of configMaker."
   },
   "promos": {
-    "1.21.1-latest": "21.1.1.0",
+    "1.21.1-latest": "21.1.1.1-alpha1",
     "1.21.1-recommended": "21.1.1.0"
   }
 }
