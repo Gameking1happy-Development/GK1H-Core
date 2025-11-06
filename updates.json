@@ -8,10 +8,11 @@
     "1.0.3": "Renamed classes, reformated everything, and updated Gradle, Loom, and ModDevGradle.",
     "21.1.1.0": "Changed versioning to [Minecraft Minor].[Minecraft Patch].[Major].[Minor].",
     "21.1.1.1-alpha1": "Experimental changes of ConfigMaker.",
-    "21.1.1.1": "Changed how ConfigMaker works."
+    "21.1.1.1": "Changed how ConfigMaker works.",
+    "21.1.1.2": "Removed ConfigMaker and dependency of FCAP because will use Fzzy Config in mods."
   },
   "promos": {
-    "1.21.1-latest": "21.1.1.1",
-    "1.21.1-recommended": "21.1.1.1"
+    "1.21.1-latest": "21.1.1.2",
+    "1.21.1-recommended": "21.1.1.2"
   }
 }
