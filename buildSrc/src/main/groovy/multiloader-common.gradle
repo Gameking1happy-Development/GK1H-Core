@@ -1,5 +1,6 @@
 //file:noinspection GroovyAssignabilityCheck
 //file:noinspection ForeignDelegate
+//file:noinspection GrUnresolvedAccess
 plugins {
     id 'java-library'
     id 'maven-publish'
@@ -43,19 +44,6 @@ repositories {
     maven {
         name = 'BlameJared'
         url = 'https://maven.blamejared.com'
-    }
-}
-
-// Declare capabilities on the outgoing configurations.
-// Read more about capabilities here: https://docs.gradle.org/current/userguide/component_capabilities.html#sec:declaring-additional-capabilities-for-a-local-component
-['apiElements', 'runtimeElements', 'sourcesElements', 'javadocElements'].each { variant ->
-    configurations."$variant".outgoing {
-        capability("$group:${base.archivesName.get()}:$version")
-        capability("$group:$mod_id-${project.name}-${minecraft_version}:$version")
-        capability("$group:$mod_id:$version")
-    }
-    publishing.publications.configureEach {
-        suppressPomMetadataWarningsFor(variant)
     }
 }
 
