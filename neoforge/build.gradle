@@ -3,9 +3,15 @@
 plugins {
     id 'multiloader-loader'
     id 'net.neoforged.moddev'
-    id 'maven-publish'
 }
-
+repositories {
+    maven {
+        url = "https://thedarkcolour.github.io/KotlinForForge/"
+    }
+}
+dependencies {
+    runtimeOnly "me.fzzyhmstrs:fzzy_config:${fzzyConfigVersion}+neoforge"
+}
 neoForge {
     version = neoforge_version
     // Automatically enable neoforge AccessTransformers if the file exists
