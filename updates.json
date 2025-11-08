@@ -12,10 +12,11 @@
     "21.1.1.2": "Removed ConfigMaker and dependency of FCAP because will use Fzzy Config in mods.",
     "21.1.1.3-alpha1": "Fzzy Config implementation developmental.",
     "21.1.1.3-alpha2": "Dependency type change.",
-    "21.1.1.3-alpha3": "Fix Maven."
+    "21.1.1.3-alpha3": "Fix Maven.",
+    "21.1.1.3": "Reverted Fzzy Config implementation due to issues, readded ConfigMaker, kept Maven fix."
   },
   "promos": {
-    "1.21.1-latest": "21.1.1.3-alpha3",
-    "1.21.1-recommended": "21.1.1.2"
+    "1.21.1-latest": "21.1.1.3",
+    "1.21.1-recommended": "21.1.1.3"
   }
 }

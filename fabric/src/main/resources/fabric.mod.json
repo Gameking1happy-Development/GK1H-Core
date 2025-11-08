@@ -29,7 +29,7 @@
     "fabric-api": ">=${fabric_version}",
     "minecraft": "${minecraft_version}",
     "java": ">=${java_version}",
-    "fzzy_config": ">=${fzzyConfigVersion}"
+    "forgeconfigapiport": ">=${fcap_version}"
   },
   "recommends": {
     "modmenu": ">=${modmenu_version}"
@@ -46,7 +46,7 @@
         "fabricloader@>=${fabric_loader_version}#(ignore)",
         "minecraft@${minecraft_version}#(ignore)",
         "java@>=${java_version}#(ignore)",
-        "fzzy_config@>=${fzzyConfigVersion}(required){modrinth:hYykXjDp}"
+        "forgeconfigapiport@>=${fcap_version}(required){modrinth:ohNO6lps}"
       ]
     }
   }
