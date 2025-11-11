@@ -12,6 +12,6 @@ public class MainNeoForge {
         // Initialize the mod.
         Main.init();
         addPacksNeoForge aPN = new addPacksNeoForge();
-        modBus.addListener(aPN::registerpacks);
+        modBus.addListener(aPN::registerpacksNF);
     }
 }

@@ -11,7 +11,7 @@ import static io.github.gameking1happy.gk1hcore.Main.fNAP;
 
 @SuppressWarnings("unused")
 public class addPacksNeoForge implements addPacks {
-    public void registerpacks(AddPackFindersEvent event) {
+    public void registerpacksNF(AddPackFindersEvent event)    {
         addpacks(event);
     }
     @Override

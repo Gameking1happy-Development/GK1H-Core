@@ -6,6 +6,7 @@ import io.github.gameking1happy.gk1hcore.Main;
 @SuppressWarnings("unused")
 public interface addPacks {
     default void addpacks(Object modContainerOrEvent) {}
+    default void registerpacksFa(Object modIDOrEVENT) {}
     default void addPack(@NotNull Object modContainerOrEvent, @NotNull String modID, @NotNull String path, @NotNull String DisplayName, @NotNull String activationType, @NotNull String type, @NotNull String packSource, @NotNull String packPosition) {}
     default void addHiddenPack(@NotNull Object modContainerOrEvent, @NotNull String modID, @NotNull String path, @NotNull String DisplayName, @NotNull String activationType, @NotNull String type, @NotNull String packSource, @NotNull String packPosition) {
         Main.packExclude(modID + ":" + path);
