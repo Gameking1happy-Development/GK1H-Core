@@ -4,6 +4,7 @@ public interface IPlatformHelper {
     // Returns the name of the platform.
     String getPlatformName();
     // Checks if a mod is loaded given its mod ID.
+    @SuppressWarnings("unused")
     boolean isModLoaded(String modId);
     // Checks if the current environment is a development environment.
     boolean isDevelopmentEnvironment();
