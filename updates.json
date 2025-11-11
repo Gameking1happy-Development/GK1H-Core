@@ -14,10 +14,11 @@
     "21.1.1.3-alpha2": "Dependency type change.",
     "21.1.1.3-alpha3": "Fix Maven.",
     "21.1.1.3": "Reverted Fzzy Config implementation due to issues, readded ConfigMaker, kept Maven fix.",
-    "21.1.1.4-beta1": "Updated FCAP to 21.1.5, implemented some pack registering code, code cleanup, and more."
+    "21.1.1.4-beta1": "Updated FCAP to 21.1.5, implemented some pack registering code, code cleanup, and more.",
+    "21.1.1.4-beta2": "Possible fix."
   },
   "promos": {
-    "1.21.1-latest": "21.1.1.4-beta1",
+    "1.21.1-latest": "21.1.1.4-beta2",
     "1.21.1-recommended": "21.1.1.3"
   }
 }
