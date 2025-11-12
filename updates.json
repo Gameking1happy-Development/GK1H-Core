@@ -18,10 +18,11 @@
     "21.1.1.4-beta2": "Possible fix.",
     "21.1.1.4-beta3": "Possible fix 2.",
     "21.1.1.4-beta4": "Actual fix.",
-    "21.1.1.4": "Updated FCAP to 21.1.5, NeoForge to 21.1.215, and Fabric Loader to 0.18.0, implemented some pack registering code, code cleanup, and more."
+    "21.1.1.4": "Updated FCAP to 21.1.5, NeoForge to 21.1.215, and Fabric Loader to 0.18.0, implemented some pack registering code, code cleanup, and more.",
+    "21.1.1.5": "Changed pack registering code because of oversight involving Fabric."
   },
   "promos": {
-    "1.21.1-latest": "21.1.1.4",
-    "1.21.1-recommended": "21.1.1.4"
+    "1.21.1-latest": "21.1.1.5",
+    "1.21.1-recommended": "21.1.1.5"
   }
 }

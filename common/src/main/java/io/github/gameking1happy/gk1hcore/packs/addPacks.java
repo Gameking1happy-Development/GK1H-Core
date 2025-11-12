@@ -2,11 +2,12 @@ package io.github.gameking1happy.gk1hcore.packs;
 
 import org.jetbrains.annotations.NotNull;
 import io.github.gameking1happy.gk1hcore.Main;
+import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("unused")
 public interface addPacks {
-    default void addpacks(Object modContainerOrEvent) {}
-    default void registerpacksFa(Object modIDOrEVENT) {}
+    default void addpacks(@NotNull Object modContainerOrEvent, @Nullable String modID) {}
+    default void addModID(@NotNull String modID) {}
     default void addPack(@NotNull Object modContainerOrEvent, @NotNull String modID, @NotNull String path, @NotNull String DisplayName, @NotNull String activationType, @NotNull String type, @NotNull String packSource, @NotNull String packPosition) {}
     default void addHiddenPack(@NotNull Object modContainerOrEvent, @NotNull String modID, @NotNull String path, @NotNull String DisplayName, @NotNull String activationType, @NotNull String type, @NotNull String packSource, @NotNull String packPosition) {
         Main.packExclude(modID + ":" + path);
