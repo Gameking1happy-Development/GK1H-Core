@@ -16,7 +16,6 @@ public class FabricPlatformHelper implements IPlatformHelper {
         // Checks if a mod is loaded given its mod ID.
         return getInstance().isModLoaded(modId);
     }
-
     @Override
     public boolean isDevelopmentEnvironment() {
         // Checks if the current environment is a development environment.

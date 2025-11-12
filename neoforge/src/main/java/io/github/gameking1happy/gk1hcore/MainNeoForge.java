@@ -4,7 +4,7 @@ import io.github.gameking1happy.gk1hcore.packs.addPacksNeoForge;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 
-import static io.github.gameking1happy.gk1hcore.Main.MOD_ID;
+import static io.github.gameking1happy.gk1hcore.Main.*;
 
 @Mod(MOD_ID)
 public class MainNeoForge {

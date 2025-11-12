@@ -18,7 +18,6 @@ public class NeoForgePlatformHelper implements IPlatformHelper {
         // Checks if a mod is loaded given its mod ID.
         return ModList.get().isLoaded(modId);
     }
-
     @Override
     public boolean isDevelopmentEnvironment() {
         // Checks if the current environment is a development environment.

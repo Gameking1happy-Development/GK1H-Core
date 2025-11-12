@@ -12,7 +12,7 @@ import static io.github.gameking1happy.gk1hcore.Main.fNAP;
 @SuppressWarnings("unused")
 public class addPacksNeoForge implements addPacks {
     public void registerpacks(AddPackFindersEvent event)    {
-        addpacks(event, null);
+        addpacks(event, "");
     }
     @Override
     public void addPack(@NotNull Object object, @NotNull String modID, @NotNull String path, @NotNull String DisplayName, @NotNull String activationType, @NotNull String type, @NotNull String packSource, @NotNull String packPosition) {

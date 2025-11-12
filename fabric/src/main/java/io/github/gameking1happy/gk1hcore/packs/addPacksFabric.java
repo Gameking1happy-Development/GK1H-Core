@@ -7,22 +7,13 @@ import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static io.github.gameking1happy.gk1hcore.Main.fNAP;
 
 @SuppressWarnings({"unused", "UnstableApiUsage"})
 public class addPacksFabric implements addPacks {
-    public static List<String> modIDs = new ArrayList<>();
     @Override
-    public void addModID(@NotNull String modID) {
-        modIDs.add(modID);
-    }
-    public void registerpacks() {
-        for (String str : modIDs) {
-            FabricLoader.getInstance().getModContainer(str).ifPresent(modContainer -> addpacks(modContainer,str));
-        }
+    public void registerpacksFa(String modID) {
+        FabricLoader.getInstance().getModContainer(modID).ifPresent(modContainer -> addpacks(modContainer,modID));
     }
     @Override
     public void addPack(@NotNull Object modContainer, @NotNull String modID, @NotNull String path, @NotNull String DisplayName, @NotNull String activationType, @NotNull String unused1, @NotNull String unused2, @NotNull String unused3) {
