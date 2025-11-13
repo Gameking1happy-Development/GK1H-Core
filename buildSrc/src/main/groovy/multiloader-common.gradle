@@ -81,7 +81,6 @@ processResources {
             'mod_source_url'               : mod_source_url,
             'mod_issue_url'                : mod_issue_url,
             'modmenu_version'              : modmenu_version,
-            'fcap_version'                 : fcap_version
     ]
 
     filesMatching(['pack.mcmeta', 'fabric.mod.json', 'META-INF/mods.toml', 'META-INF/neoforge.mods.toml', '*.mixins.json']) {
