@@ -4,7 +4,6 @@ plugins {
     id 'multiloader-loader'
     id 'net.neoforged.moddev'
 }
-
 neoForge {
     version = neoforge_version
     // Automatically enable neoforge AccessTransformers if the file exists
