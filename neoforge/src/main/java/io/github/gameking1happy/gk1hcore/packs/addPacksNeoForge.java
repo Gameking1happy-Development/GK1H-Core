@@ -15,33 +15,29 @@ public class addPacksNeoForge implements addPacks {
         addpacks(event, "");
     }
     @Override
-    public void addPack(@NotNull Object object, @NotNull String modID, @NotNull String path, @NotNull String DisplayName, @NotNull String activationType, @NotNull String type, @NotNull String packSource, @NotNull String packPosition) {
+    public void addPack(@NotNull Object object, @NotNull String modID, @NotNull String path, @NotNull String DisplayName, @NotNull activationType actType, @NotNull packType type, @NotNull packSource source, @NotNull packPosition position) {
         AddPackFindersEvent event = (AddPackFindersEvent) object;
         event.addPackFinders(
                 fNAP(modID, path),
                 switch (type) {
-                    case "RESOURCE" -> PackType.CLIENT_RESOURCES;
-                    case "DATA" -> PackType.SERVER_DATA;
-                    default -> throw new IllegalArgumentException("Invalid pack type: " + type);
+                    case RESOURCE -> PackType.CLIENT_RESOURCES;
+                    case DATA -> PackType.SERVER_DATA;
                 },
                 Component.literal(DisplayName),
-                switch (packSource) {
-                    case "BUILT_IN" -> PackSource.BUILT_IN;
-                    case "WORLD" -> PackSource.WORLD;
-                    case "SERVER" -> PackSource.SERVER;
-                    case "DEFAULT" -> PackSource.DEFAULT;
-                    case "FEATURE" -> PackSource.FEATURE;
-                    default -> throw new IllegalArgumentException("Invalid pack source: " + packSource);
+                switch (source) {
+                    case BUILT_IN -> PackSource.BUILT_IN;
+                    case WORLD -> PackSource.WORLD;
+                    case SERVER -> PackSource.SERVER;
+                    case DEFAULT -> PackSource.DEFAULT;
+                    case FEATURE -> PackSource.FEATURE;
                 },
-                switch (activationType) {
-                    case "ALWAYS_ENABLED" -> true;
-                    case "NORMAL", "DEFAULT_ENABLED" -> false;
-                    default -> throw new IllegalArgumentException("Invalid activation type: " + activationType);
+                switch (actType) {
+                    case ALWAYS -> true;
+                    case NORMAL, DEFAULT -> false;
                 },
-                switch (packPosition) {
-                    case "TOP" -> Pack.Position.TOP;
-                    case "BOTTOM" -> Pack.Position.BOTTOM;
-                    default -> throw new IllegalArgumentException("Invalid pack position: " + packPosition);
+                switch (position) {
+                    case TOP -> Pack.Position.TOP;
+                    case BOTTOM -> Pack.Position.BOTTOM;
                 }
         );
     }

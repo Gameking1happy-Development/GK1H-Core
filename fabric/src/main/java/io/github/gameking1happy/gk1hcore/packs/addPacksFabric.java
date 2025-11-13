@@ -16,17 +16,16 @@ public class addPacksFabric implements addPacks {
         FabricLoader.getInstance().getModContainer(modID).ifPresent(modContainer -> addpacks(modContainer,modID));
     }
     @Override
-    public void addPack(@NotNull Object modContainer, @NotNull String modID, @NotNull String path, @NotNull String DisplayName, @NotNull String activationType, @NotNull String unused1, @NotNull String unused2, @NotNull String unused3) {
+    public void addPack(@NotNull Object modContainer, @NotNull String modID, @NotNull String path, @NotNull String DisplayName, @NotNull activationType actType, @NotNull packType unused1, @NotNull packSource unused2, @NotNull packPosition unused3) {
         ResourceManagerHelperImpl.registerBuiltinResourcePack(
                 fNAP(modID, path),
                 fNAP(modID, path).getPath(),
                 (ModContainer) modContainer,
                 Component.literal(DisplayName),
-                switch (activationType) {
-                    case "ALWAYS_ENABLED" -> ResourcePackActivationType.ALWAYS_ENABLED;
-                    case "NORMAL" -> ResourcePackActivationType.NORMAL;
-                    case "DEFAULT_ENABLED" -> ResourcePackActivationType.DEFAULT_ENABLED;
-                    default -> throw new IllegalArgumentException("Invalid activation type: " + activationType);
+                switch (actType) {
+                    case ALWAYS -> ResourcePackActivationType.ALWAYS_ENABLED;
+                    case NORMAL -> ResourcePackActivationType.NORMAL;
+                    case DEFAULT -> ResourcePackActivationType.DEFAULT_ENABLED;
                 }
         );
     }
