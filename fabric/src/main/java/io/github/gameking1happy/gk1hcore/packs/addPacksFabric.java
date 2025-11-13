@@ -11,9 +11,10 @@ import static io.github.gameking1happy.gk1hcore.Main.fNAP;
 
 @SuppressWarnings({"unused", "UnstableApiUsage"})
 public class addPacksFabric implements addPacks {
-    @Override
-    public void registerpacksFa(String modID) {
-        FabricLoader.getInstance().getModContainer(modID).ifPresent(modContainer -> addpacks(modContainer,modID));
+    public void registerpacks() {
+        for (String modID : ModIDs) {
+            FabricLoader.getInstance().getModContainer(modID).ifPresent(modContainer -> addPacks.addpacks(modContainer, modID));
+        }
     }
     @Override
     public void addPack(@NotNull Object modContainer, @NotNull String modID, @NotNull String path, @NotNull String DisplayName, @NotNull activationType actType, @NotNull packType unused1, @NotNull packSource unused2, @NotNull packPosition unused3) {
