@@ -13,7 +13,7 @@ import static io.github.gameking1happy.gk1hcore.Main.fNAP;
 public class addPacksFabric implements addPacks {
     public void registerpacks() {
         for (String modID : ModIDs) {
-            FabricLoader.getInstance().getModContainer(modID).ifPresent(modContainer -> addPacks.addpacks(modContainer, modID));
+            FabricLoader.getInstance().getModContainer(modID).ifPresent(modContainer -> addpacks(modContainer, modID));
         }
     }
     @Override
