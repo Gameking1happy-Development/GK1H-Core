@@ -38,7 +38,7 @@
       "links": {
         "modmenu.discord": "https://discord.gg/AwJvGzH"
       },
-    "update_checker": true
+      "update_checker": true
     },
     "mc-publish": {
       "dependencies": [

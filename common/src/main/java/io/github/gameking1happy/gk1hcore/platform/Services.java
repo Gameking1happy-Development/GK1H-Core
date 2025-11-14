@@ -1,6 +1,7 @@
 package io.github.gameking1happy.gk1hcore.platform;
 
-import io.github.gameking1happy.gk1hcore.packs.addPacks;
+import io.github.gameking1happy.gk1hcore.packs.AddPack;
+import io.github.gameking1happy.gk1hcore.packs.RegisterPacks;
 import io.github.gameking1happy.gk1hcore.platform.services.IPlatformHelper;
 import java.util.ServiceLoader;
 
@@ -8,8 +9,8 @@ import static io.github.gameking1happy.gk1hcore.Main.LOG;
 public class Services {
     // Platform helper which provides information which platform the mod is running on.
     public static final IPlatformHelper PLATFORM = load(IPlatformHelper.class);
-    @SuppressWarnings("unused")
-    public static final addPacks ADDPACKS = load(addPacks.class);
+    public static final AddPack ADDPACK = load(AddPack.class);
+    public static final RegisterPacks REGISTERPACKS = load(RegisterPacks.class);
     // This code is used to load a service for the current environment.
     public static <T> T load(Class<T> clazz) {
         final T loadedService = ServiceLoader.load(clazz)

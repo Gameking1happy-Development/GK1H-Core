@@ -23,10 +23,11 @@
     "21.1.1.6": "Need to change config API to be able to have configs control packs.",
     "21.1.1.7-beta1": "Actually switching to Fzzy Config.",
     "21.1.1.7-beta2": "Replaced string parameters that should only be set amount of values with enums.",
-    "21.1.1.7": "Implemented Fzzy Config and other changes."
+    "21.1.1.7": "Implemented Fzzy Config and other changes.",
+    "21.1.1.8": "\"Improved\" the pack code, it is probably horrendous though."
   },
   "promos": {
-    "1.21.1-latest": "21.1.1.7",
-    "1.21.1-recommended": "21.1.1.7"
+    "1.21.1-latest": "21.1.1.8",
+    "1.21.1-recommended": "21.1.1.8"
   }
 }
