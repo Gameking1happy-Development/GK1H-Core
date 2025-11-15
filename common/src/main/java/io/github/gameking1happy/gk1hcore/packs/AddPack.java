@@ -3,7 +3,7 @@ package io.github.gameking1happy.gk1hcore.packs;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Simplifies adding packs by allowing using a method in common instead of separate methods for Fabric & NeoForge.
+ * Simplifies adding packs by allowing using a method in common instead of separate methods for Fabric &amp; NeoForge.
  * @see AddPacks
  */
 public interface AddPack {
