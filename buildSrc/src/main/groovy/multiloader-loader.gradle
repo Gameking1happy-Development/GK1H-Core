@@ -1,12 +1,13 @@
+//file:noinspection GrUnresolvedAccess
 plugins {
     id 'multiloader-common'
 }
 
 configurations {
-    commonJava{
+    commonJava {
         canBeResolved = true
     }
-    commonResources{
+    commonResources {
         canBeResolved = true
     }
 }

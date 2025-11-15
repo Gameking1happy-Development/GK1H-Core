@@ -5,22 +5,23 @@ import net.neoforged.fml.ModList;
 
 import static net.neoforged.fml.loading.FMLLoader.isProduction;
 
+/**
+ * NeoForge code for the platform helper which provides information which platform the mod is running on.
+ */
 public class NeoForgePlatformHelper implements IPlatformHelper {
 
     @Override
     public String getPlatformName() {
-        // Returns the name of the platform.
         return "NeoForge";
     }
 
     @Override
     public boolean isModLoaded(String modId) {
-        // Checks if a mod is loaded given its mod ID.
         return ModList.get().isLoaded(modId);
     }
+
     @Override
     public boolean isDevelopmentEnvironment() {
-        // Checks if the current environment is a development environment.
         return !isProduction();
     }
 }

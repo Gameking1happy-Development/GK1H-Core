@@ -24,10 +24,11 @@
     "21.1.1.7-beta1": "Actually switching to Fzzy Config.",
     "21.1.1.7-beta2": "Replaced string parameters that should only be set amount of values with enums.",
     "21.1.1.7": "Implemented Fzzy Config and other changes.",
-    "21.1.1.8": "\"Improved\" the pack code, it is probably horrendous though."
+    "21.1.1.8": "\"Improved\" the pack code, it is probably horrendous though.",
+    "21.1.1.9": "Added documentation and cleaned up code."
   },
   "promos": {
-    "1.21.1-latest": "21.1.1.8",
-    "1.21.1-recommended": "21.1.1.8"
+    "1.21.1-latest": "21.1.1.9",
+    "1.21.1-recommended": "21.1.1.9"
   }
 }
