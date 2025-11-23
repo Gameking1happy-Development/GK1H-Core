@@ -6,7 +6,7 @@ import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.NotNull;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.fNaP;
 
 /**
  * Fabric code for adding packs.
@@ -28,8 +28,8 @@ public class AddPackFabric implements AddPack {
     @Override
     public void addPack(@NotNull Object modContainer, @NotNull String modID, @NotNull String path, @NotNull String displayName, @NotNull activationType actType, @NotNull packType unused1, @NotNull packSource unused2, @NotNull packPosition unused3) {
         ResourceManagerHelperImpl.registerBuiltinResourcePack(
-                fNAP(modID, path),
-                fNAP(modID, path).getPath(),
+                fNaP(modID, path),
+                fNaP(modID, path).getPath(),
                 (ModContainer) modContainer,
                 Component.literal(displayName),
                 switch (actType) {

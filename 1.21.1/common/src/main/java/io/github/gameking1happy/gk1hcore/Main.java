@@ -2,7 +2,6 @@ package io.github.gameking1happy.gk1hcore;
 
 import io.github.gameking1happy.gk1hcore.mixin.PackSelectionModelMixin;
 import io.github.gameking1happy.gk1hcore.packs.*;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.repository.Pack;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
@@ -49,16 +48,6 @@ public class Main {
     public static void init(Object modBus) {
         LOG.info("GK1H Core running on {} in a {} environment.", PLATFORM.getPlatformName(), PLATFORM.getEnvironmentName());
         REGISTERPACKS.registerpacks(modBus);
-    }
-
-    /**
-     * Method to more simply call the {@link ResourceLocation#fromNamespaceAndPath(String, String)} method.
-     * @param namespace Namespace.
-     * @param path Path.
-     * @return ResourceLocation.
-     */
-    public static @NotNull ResourceLocation fNAP(@NotNull String namespace, @NotNull String path) {
-        return ResourceLocation.fromNamespaceAndPath(namespace, path);
     }
 
     /**

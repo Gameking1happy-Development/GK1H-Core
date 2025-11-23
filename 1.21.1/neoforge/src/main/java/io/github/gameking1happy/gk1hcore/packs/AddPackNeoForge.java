@@ -7,7 +7,7 @@ import net.minecraft.server.packs.repository.PackSource;
 import net.neoforged.neoforge.event.AddPackFindersEvent;
 import org.jetbrains.annotations.NotNull;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.fNaP;
 
 /**
  * NeoForge code for adding packs.
@@ -28,7 +28,7 @@ public class AddPackNeoForge implements AddPack {
     @Override
     public void addPack(@NotNull Object object, @NotNull String modID, @NotNull String path, @NotNull String displayName, @NotNull activationType actType, @NotNull packType type, @NotNull packSource source, @NotNull packPosition position) {
         ((AddPackFindersEvent) object).addPackFinders(
-                fNAP(modID, path),
+                fNaP(modID, path),
                 switch (type) {
                     case RESOURCE -> PackType.CLIENT_RESOURCES;
                     case DATA -> PackType.SERVER_DATA;
