@@ -26,10 +26,11 @@
     "21.1.1.7": "Implemented Fzzy Config and other changes.",
     "21.1.1.8": "\"Improved\" the pack code, it is probably horrendous though.",
     "21.1.1.9": "Added documentation and cleaned up code.",
-    "21.1.2.0": "Some more stuff for datagen."
+    "21.1.2.0": "Some more stuff for datagen.",
+    "21.1.2.1": "Add compat flags for commonly checked for mods."
   },
   "promos": {
-    "1.21.1-latest": "21.1.2.0",
-    "1.21.1-recommended": "21.1.2.0"
+    "1.21.1-latest": "21.1.2.1",
+    "1.21.1-recommended": "21.1.2.1"
   }
 }

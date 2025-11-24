@@ -15,7 +15,6 @@ public interface IPlatformHelper {
      * @param modId ID of the mod being checked.
      * @return True if the mod is loaded, otherwise returns false.
      */
-    @SuppressWarnings("unused")
     boolean isModLoaded(String modId);
 
     /**
