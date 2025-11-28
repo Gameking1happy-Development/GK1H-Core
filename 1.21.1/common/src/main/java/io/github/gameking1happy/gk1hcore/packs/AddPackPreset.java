@@ -8,6 +8,7 @@ import static io.github.gameking1happy.gk1hcore.packs.activationType.ALWAYS;
 import static io.github.gameking1happy.gk1hcore.packs.packPosition.TOP;
 import static io.github.gameking1happy.gk1hcore.packs.packSource.BUILT_IN;
 import static io.github.gameking1happy.gk1hcore.packs.packType.DATA;
+import static io.github.gameking1happy.gk1hcore.packs.packType.RESOURCE;
 import static io.github.gameking1happy.gk1hcore.platform.Services.ADDPACK;
 
 /**
@@ -41,5 +42,15 @@ public class AddPackPreset {
      */
     public static void addCDP(@NotNull Object modContainerOrEvent, @NotNull String modID, @NotNull String path) {
         addHiddenPack(modContainerOrEvent, modID, path, modID + path, ALWAYS, DATA, BUILT_IN, TOP);
+    }
+    /**
+     * CRP = Configurable Resource Preset, used for resource packs which are toggled via configs.
+     * @param modContainerOrEvent ModContainer for Fabric, AddPackFindersEvent for NeoForge.
+     * @param modID Mod ID of the mod the pack is added by.
+     * @param path The path the pack is in, starting in the "resource/" directory.
+     * @see AddPackPreset#addHiddenPack(Object, String, String, String, activationType, packType, packSource, packPosition)
+     */
+    public static void addCRP(@NotNull Object modContainerOrEvent, @NotNull String modID, @NotNull String path) {
+        addHiddenPack(modContainerOrEvent, modID, path, modID + path, ALWAYS, RESOURCE, BUILT_IN, TOP);
     }
 }
