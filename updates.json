@@ -28,10 +28,11 @@
     "21.1.1.9": "Added documentation and cleaned up code.",
     "21.1.2.0": "Some more stuff for datagen.",
     "21.1.2.1": "Add compat flags for commonly checked for mods.",
-    "21.1.2.2": "More compat flags and a new AddPackPreset."
+    "21.1.2.2": "More compat flags and a new AddPackPreset.",
+    "21.1.2.3": "Renamed everything to convention."
   },
   "promos": {
-    "1.21.1-latest": "21.1.2.2",
-    "1.21.1-recommended": "21.1.2.2"
+    "1.21.1-latest": "21.1.2.3",
+    "1.21.1-recommended": "21.1.2.3"
   }
 }

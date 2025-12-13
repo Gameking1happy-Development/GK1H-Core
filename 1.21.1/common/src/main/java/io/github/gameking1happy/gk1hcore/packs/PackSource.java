@@ -4,7 +4,7 @@ package io.github.gameking1happy.gk1hcore.packs;
  * NeoForge Only. Controls whether the datapack is enabled or disabled by default. Resource packs are always disabled by default unless you set alwaysActive to true.
  */
 @SuppressWarnings("unused")
-public enum packSource {
+public enum PackSource {
     /**
      * Packs built into the mod, usually you should use this, unless you want it to be toggled by players via the pack selection screen, then see {@link #FEATURE}.
      */

@@ -12,10 +12,10 @@ public interface AddPack {
      * @param modID Mod ID of the mod the pack is added by.
      * @param path The path the pack is in, starting in the "resource/" directory.
      * @param displayName Display name of the pack.
-     * @param actType See {@link activationType}.
-     * @param type See {@link packType}.
-     * @param source See {@link packSource}.
-     * @param position See {@link packPosition}.
+     * @param actType See {@link ActivationType}.
+     * @param type See {@link PackType}.
+     * @param source See {@link PackSource}.
+     * @param position See {@link PackPosition}.
      */
-    void addPack(@NotNull Object modContainerOrEvent, @NotNull String modID, @NotNull String path, @NotNull String displayName, @NotNull activationType actType, @NotNull packType type, @NotNull packSource source, @NotNull packPosition position);
+    void addPack(@NotNull Object modContainerOrEvent, @NotNull String modID, @NotNull String path, @NotNull String displayName, @NotNull ActivationType actType, @NotNull PackType type, @NotNull PackSource source, @NotNull PackPosition position);
 }

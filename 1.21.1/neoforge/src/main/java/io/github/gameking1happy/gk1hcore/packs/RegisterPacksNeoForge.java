@@ -4,7 +4,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.event.AddPackFindersEvent;
 import org.jetbrains.annotations.NotNull;
 
-import static io.github.gameking1happy.gk1hcore.Main.AddPacksList;
+import static io.github.gameking1happy.gk1hcore.Main.addPacksList;
 
 /**
  * NeoForge code for registering packs.
@@ -14,8 +14,8 @@ public class RegisterPacksNeoForge implements RegisterPacks {
     /**
      * @param event AddPackFindersEvent, this is necessary for NeoForge.
      */
-    public static void registerpacksNF(@NotNull AddPackFindersEvent event) {
-        for (AddPacks aP : AddPacksList) {
+    public static void registerPacksNeoForge(@NotNull AddPackFindersEvent event) {
+        for (AddPacks aP : addPacksList) {
             aP.addPacks(event);
         }
     }
@@ -24,7 +24,7 @@ public class RegisterPacksNeoForge implements RegisterPacks {
      * @param event Required for this to work.
      */
     @Override
-    public void registerpacks(@NotNull Object event) {
-        ((IEventBus) event).addListener(RegisterPacksNeoForge::registerpacksNF);
+    public void registerPacks(@NotNull Object event) {
+        ((IEventBus) event).addListener(RegisterPacksNeoForge::registerPacksNeoForge);
     }
 }

@@ -19,7 +19,7 @@ public class CoreData {
      * @param path Path.
      * @return ResourceLocation.
      */
-    public static @NotNull ResourceLocation fNaP(@NotNull String namespace, @NotNull String path) {
+    public static @NotNull ResourceLocation fnap(@NotNull String namespace, @NotNull String path) {
         return ResourceLocation.fromNamespaceAndPath(namespace, path);
     }
 
@@ -30,20 +30,20 @@ public class CoreData {
      * @param <T> In reality is the registry.
      * @return Tag key.
      */
-    public static @NotNull <T> TagKey<T> TKC(@NotNull ResourceKey<? extends Registry<T>> registry, @NotNull ResourceLocation location) {
+    public static @NotNull <T> TagKey<T> tkc(@NotNull ResourceKey<? extends Registry<T>> registry, @NotNull ResourceLocation location) {
         return TagKey.create(registry, location);
     }
 
     /**
-     * Method to more simply call the {@link TagKey#create(ResourceKey, ResourceLocation)} method. Uses {@link CoreData#fNaP(String, String)} for giving namespace and path directly.
+     * Method to more simply call the {@link TagKey#create(ResourceKey, ResourceLocation)} method. Uses {@link CoreData#fnap(String, String)} for giving namespace and path directly.
      * @param registry Actually is the resource key.
      * @param namespace Namespace.
      * @param path Path.
      * @param <T> In reality is the registry.
      * @return Tag key.
      */
-    public static @NotNull <T> TagKey<T> TKC(@NotNull ResourceKey<? extends Registry<T>> registry, @NotNull String namespace, @NotNull String path) {
-        return TKC(registry, fNaP(namespace, path));
+    public static @NotNull <T> TagKey<T> tkc(@NotNull ResourceKey<? extends Registry<T>> registry, @NotNull String namespace, @NotNull String path) {
+        return tkc(registry, fnap(namespace, path));
     }
 
     /**
@@ -51,17 +51,17 @@ public class CoreData {
      * @param location Resource location.
      * @return Tag key.
      */
-    public static @NotNull TagKey<Item> ITKC(@NotNull ResourceLocation location) {
-        return TKC(Registries.ITEM, location);
+    public static @NotNull TagKey<Item> itkc(@NotNull ResourceLocation location) {
+        return tkc(Registries.ITEM, location);
     }
 
     /**
-     * Method to more simply call the {@link TagKey#create(ResourceKey, ResourceLocation)} method. Specifically for item registry. Uses {@link CoreData#fNaP(String, String)} for giving namespace and path directly.
+     * Method to more simply call the {@link TagKey#create(ResourceKey, ResourceLocation)} method. Specifically for item registry. Uses {@link CoreData#fnap(String, String)} for giving namespace and path directly.
      * @param namespace Namespace.
      * @param path Path.
      * @return Tag key.
      */
-    public static @NotNull TagKey<Item> ITKC(@NotNull String namespace, @NotNull String path) {
-        return ITKC(fNaP(namespace, path));
+    public static @NotNull TagKey<Item> itkc(@NotNull String namespace, @NotNull String path) {
+        return itkc(fnap(namespace, path));
     }
 }

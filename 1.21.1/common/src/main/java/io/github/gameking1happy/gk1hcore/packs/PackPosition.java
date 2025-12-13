@@ -4,7 +4,7 @@ package io.github.gameking1happy.gk1hcore.packs;
  * NeoForge Only. Where the pack goes for determining pack applying order.
  */
 @SuppressWarnings("unused")
-public enum packPosition {
+public enum PackPosition {
     /**
      * Add the pack at the top.
      */

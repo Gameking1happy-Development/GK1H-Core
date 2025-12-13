@@ -6,7 +6,7 @@ package io.github.gameking1happy.gk1hcore.packs;
  * @see #DEFAULT
  */
 @SuppressWarnings("unused")
-public enum activationType {
+public enum ActivationType {
     /**
      * NeoForge &amp; Fabric: The pack is forced active always.
      */
